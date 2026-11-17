@@ -28,8 +28,4 @@ Q2 - Free-page count and address translation (kalloc.c, vm.c, memtest.c):
    child share the virtual address but get different physical pages after fork(), and that
    freepages() after wait() returns exactly to its pre-fork value (no leak: PASS).
 
-Build/run: make qemu-nox CPUS=1 (single CPU for deterministic output); exit QEMU with
-Ctrl-a then x. Q1_output.txt / Q2_output.txt are console logs of synctest and memtest runs
-with `echo 2401MC17` first so the roll number is visible.
-Note: the tree keeps the stock -Werror Makefile; it was verified warning-clean (all new and
-touched files compile with -Werror) and functionally tested with QEMU on Ubuntu 26.04.
+
